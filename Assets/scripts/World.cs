@@ -50,4 +50,12 @@ public class World : MonoBehaviour
 
         TextPanel.GetComponent<UnityEngine.UI.Text>().text = str;
     }
+
+
+    public void NewGame()
+    {
+        WorldData = new WorldData();
+
+        WorldData.Airports =  Airports.GetAirports();
+    }
 }

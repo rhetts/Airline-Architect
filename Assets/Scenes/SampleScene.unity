@@ -406,6 +406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   AirportPrototype: {fileID: 8631565951314819985, guid: df742679acba0474f84da4a393f565d0,
     type: 3}
+  TextPanel: {fileID: 985039443}
 --- !u!4 &952069945
 Transform:
   m_ObjectHideFlags: 0
@@ -470,8 +471,8 @@ Camera:
     y: 0
     width: 1
     height: 1
-  near clip plane: 0.3
-  far clip plane: 10000
+  near clip plane: 10
+  far clip plane: 3000
   field of view: 20
   orthographic: 0
   orthographic size: 5
@@ -601,6 +602,10 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 'Vancouver Intl - CYVR
+
+    123
+
+    456
 
 '
 --- !u!222 &985039446

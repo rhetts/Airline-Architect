@@ -30,6 +30,11 @@ namespace Assets.scripts.Model
         [CsvHelper.Configuration.Attributes.BooleanFalseValues("no")]
         public bool ScheduledService { get; set; }
 
+        public int Population { get; set; }
+        public int Runways { get; set; }
+
+
+
         public override string ToString()
         {
             return Name;

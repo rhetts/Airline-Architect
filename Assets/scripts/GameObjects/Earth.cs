@@ -12,13 +12,14 @@ public class Earth : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        var airports = Airports.GetAirports();
+        World.Instance.NewGame();
+
+        //var airports = Airports.GetAirports();
 
 
-        foreach (var ap in airports)
+        foreach (var ap in World.Instance.WorldData.Airports)
         {
             var pos = ToVector3(ap.Latitude, ap.Longitude, 0);
-
             
             //Instantiate(obj);
             //var newObject = Instantiate(AirportPrototype, pos, RotateTo(pos, this.transform.position));
