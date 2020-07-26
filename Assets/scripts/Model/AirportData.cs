@@ -30,7 +30,17 @@ namespace Assets.scripts.Model
         [CsvHelper.Configuration.Attributes.BooleanFalseValues("no")]
         public bool ScheduledService { get; set; }
 
+        [CsvHelper.Configuration.Attributes.Ignore]
         public int Population { get; set; }
+
+        [CsvHelper.Configuration.Attributes.Ignore]
+        public float WealthFactor { get; set; }
+
+        [CsvHelper.Configuration.Attributes.Ignore]
+        public float TourismFactor { get; set; }
+        
+
+        [CsvHelper.Configuration.Attributes.Ignore]
         public int Runways { get; set; }
 
 
